@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../assets/logo.svg'; // Assuming logo.svg is in src/assets
-
-// Placeholder for ScrollIndicator component, to be replaced later
-const ScrollIndicator = () => (
-  <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg className="w-8 h-8 text-brand-neu-dark" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-      <path d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </div>
-);
+import ScrollIndicator from './ScrollIndicator'; // Corrected import path
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,22 +30,20 @@ const HeroSection = () => {
 
       {/* Tagline */}
       <h1 
-        className={`text-3xl md:text-5xl font-bold text-brand-neu-dark mb-4 transition-opacity duration-1000 ease-out delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        style={{transitionDelay: isVisible ? '0.5s' : '0s'}}
+        className={`text-3xl md:text-5xl font-bold text-brand-neu-dark mb-4 transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 delay-500' : 'opacity-0 delay-0'}`}
       >
         Where stories find their aesthetic.
       </h1>
 
       {/* Subtext */}
       <p 
-        className={`text-lg md:text-xl text-brand-neu-dark/80 mb-12 transition-opacity duration-1000 ease-out delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        style={{transitionDelay: isVisible ? '1s' : '0s'}}
+        className={`text-lg md:text-xl text-brand-neu-dark/80 mb-12 transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 delay-1000' : 'opacity-0 delay-0'}`}
       >
         Designs that whisper loud stories.
       </p>
       
-      {/* Placeholder for a more sophisticated scroll indicator component */}
-      <div className={`transition-opacity duration-1000 ease-out delay-[1500ms] ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      {/* Scroll indicator component */}
+      <div className={`transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 delay-[1500ms]' : 'opacity-0 delay-0'}`}>
         <ScrollIndicator />
       </div>
 
