@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">hueneu Logo</title>
+  <desc id="logoDesc">Abstract logo for hueneu: a grounding arc (Neu) and a vibrant dot (Hue).</desc>
+  <style>
+    .neu-arc {
+      stroke: currentColor; /* Defaults to text color, e.g., brand-neu-dark */
+      stroke-width: 8;
+      fill: none;
+      stroke-linecap: round;
+    }
+    .hue-dot {
+      fill: currentColor; /* This class can be targeted for a specific brand-hue color */
+    }
+  </style>
+  <path class="neu-arc" d="M15 50 Q50 0 85 50" />
+  <circle class="hue-dot logo-hue-accent" cx="78" cy="15" r="8" />
+</svg>

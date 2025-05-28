@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-brand-neu-bg text-brand-neu-dark font-sans;
+  font-family: 'Inter', sans-serif; /* Fallback to generic sans-serif */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General utility for vibrant text, if needed outside of brand-hue specific contexts */
+.color-pop {
+  @apply text-brand-hue;
+}
+
+/* Example of a simple fade-in animation utility */
+@layer utilities {
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure full height sections for scroll snapping (optional, can be applied per section) */
+/* section {
+  min-height: 100vh;
+} */

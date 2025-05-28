@@ -1,0 +1,13 @@
+PLACEHOLDER IMAGE:
+
+This is a placeholder for the 'src/assets/images/who-knew-visual.png' image file.
+
+The hueneu application expects an actual PNG image at this location.
+This image is intended to be used for the "Who Knew?" visual pop-out or scroll-triggered element within 'The hueneu Story' section of the website, as described in the project plan.
+
+Please REPLACE this text file with your desired PNG image.
+
+For example, you could create a visual that embodies a fun surprise or a creative insight related to the hueneu brand.
+If you need a temporary visual, you can generate one using a service like:
+https://via.placeholder.com/600x400/FFB6C1/000000?text=Who+Knew+Visual!
+(Remember to download the image and save it as 'who-knew-visual.png' in this directory: 'src/assets/images/')
